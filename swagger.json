@@ -1,0 +1,181 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI 3.0",
+    "description": "",
+    "version": "1.0.11"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "tags": [
+    {
+      "name": "routes",
+      "description": "Everything about your Routes"
+    }
+  ],
+  "paths": {
+    "/configuration/:key": {
+      "get": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "getconfiguration_:key"
+      },
+      "post": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "postconfiguration_:key"
+      },
+      "put": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "putconfiguration_:key"
+      },
+      "patch": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "patchconfiguration_:key"
+      },
+      "delete": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "deleteconfiguration_:key"
+      }
+    },
+    "/configuration": {
+      "get": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "getconfiguration"
+      },
+      "post": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "postconfiguration"
+      },
+      "put": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "putconfiguration"
+      },
+      "patch": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "patchconfiguration"
+      },
+      "delete": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "deleteconfiguration"
+      }
+    },
+    "/express": {
+      "get": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "getexpress"
+      },
+      "post": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "postexpress"
+      },
+      "put": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "putexpress"
+      },
+      "patch": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "patchexpress"
+      },
+      "delete": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "deleteexpress"
+      }
+    },
+    "/function": {
+      "get": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "getfunction"
+      },
+      "post": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "postfunction"
+      },
+      "put": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "putfunction"
+      },
+      "patch": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "patchfunction"
+      },
+      "delete": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "deletefunction"
+      }
+    },
+    "/lambda": {
+      "get": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "getlambda"
+      },
+      "post": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "postlambda"
+      },
+      "put": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "putlambda"
+      },
+      "patch": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "patchlambda"
+      },
+      "delete": {
+        "tags": [
+          "routes"
+        ],
+        "operationId": "deletelambda"
+      }
+    }
+  }
+}
