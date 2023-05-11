@@ -17,7 +17,7 @@ export default brewBlankExpressFunc(async (req, res) => {
       throwErrorResponse(403, "Forbidden: Invalid API key.");
     }
     let config = getConfig();
-    if (!config) {
+    if (!config || !Object.keys(config).length) {
       await readConfigFromFile();
       config = getConfig();
     }
