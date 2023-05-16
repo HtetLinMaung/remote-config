@@ -8,6 +8,7 @@ import {
   readConfigFromFile,
   setConfig,
 } from "../../share";
+import sever from "starless-server";
 
 export default brewBlankExpressFunc(async (req, res) => {
   const method = req.method.toLowerCase();
@@ -41,7 +42,7 @@ export default brewBlankExpressFunc(async (req, res) => {
       config[key] = value;
       await fs.writeFile(CONFIG_FILE_PATH, JSON.stringify(config), "utf8");
 
-      const io = getSocketIONamespace();
+      const io = sever.getIO();
       if (io) {
         // Emit the 'configChanged' event to all connected clients in the "socket.io" namespace
         io.emit("configChanged", { key, value });
