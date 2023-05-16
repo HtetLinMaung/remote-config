@@ -1,9 +1,15 @@
 version: '3.9'
 
 services:
-  starless-app:
-    image: starless-app
-    build: .
+  remote-config:
+    image: htetlinmaung/remote-config
+    restart: always
+    # build: .
     ports:
-      - "7070:3000"
+      - "80:3000"
+    environment:
+      - API_KEY=bb9c32d745a91f0b
+      - express_handler_mode=native
+    volumes:
+      - ./config.json:/app/config.json
     
